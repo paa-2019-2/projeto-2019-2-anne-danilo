@@ -1,0 +1,197 @@
+[
+ {
+  "formulaName": "elim_list_TCC1",
+  "line": 23,
+  "character": 11
+ },
+ {
+  "formulaName": "elim_list_TCC2",
+  "line": 24,
+  "character": 27
+ },
+ {
+  "formulaName": "elim_list_TCC3",
+  "line": 24,
+  "character": 34
+ },
+ {
+  "formulaName": "elim_list_TCC4",
+  "line": 24,
+  "character": 17
+ },
+ {
+  "formulaName": "elim_list_length_TCC1",
+  "line": 23,
+  "character": 23
+ },
+ {
+  "formulaName": "search_TCC1",
+  "line": 40,
+  "character": 12
+ },
+ {
+  "formulaName": "search_TCC2",
+  "line": 41,
+  "character": 14
+ },
+ {
+  "formulaName": "preservation_contents_TCC1",
+  "line": 41,
+  "character": 28
+ },
+ {
+  "formulaName": "preservation_contents_TCC2",
+  "line": 51,
+  "character": 28
+ },
+ {
+  "formulaName": "preservation_contents_TCC3",
+  "line": 52,
+  "character": 26
+ },
+ {
+  "formulaName": "not_in_l_gives_lenght_l_TCC1",
+  "line": 52,
+  "character": 22
+ },
+ {
+  "formulaName": "nth_of_list_is_nth_append_list_TCC1",
+  "line": 67,
+  "character": 7
+ },
+ {
+  "formulaName": "nth_of_cons_TCC1",
+  "line": 77,
+  "character": 10
+ },
+ {
+  "formulaName": "nth_of_cons_TCC2",
+  "line": 81,
+  "character": 56
+ },
+ {
+  "formulaName": "nth_of_cons_TCC3",
+  "line": 81,
+  "character": 68
+ },
+ {
+  "formulaName": "nth_of_append_TCC1",
+  "line": 86,
+  "character": 25
+ },
+ {
+  "formulaName": "nth_of_append_TCC2",
+  "line": 88,
+  "character": 12
+ },
+ {
+  "formulaName": "search_works_TCC1",
+  "line": 104,
+  "character": 25
+ },
+ {
+  "formulaName": "nth_member_TCC1",
+  "line": 115,
+  "character": 41
+ },
+ {
+  "formulaName": "car_rev_TCC1",
+  "line": 133,
+  "character": 18
+ },
+ {
+  "formulaName": "car_rev_TCC2",
+  "line": 133,
+  "character": 6
+ },
+ {
+  "formulaName": "car_rev_TCC3",
+  "line": 133,
+  "character": 27
+ },
+ {
+  "formulaName": "nth_rev_zero_TCC1",
+  "line": 139,
+  "character": 8
+ },
+ {
+  "formulaName": "nth_rev_zero_TCC2",
+  "line": 139,
+  "character": 28
+ },
+ {
+  "formulaName": "nth_rev_last_TCC1",
+  "line": 145,
+  "character": 8
+ },
+ {
+  "formulaName": "nth_rev_last_TCC2",
+  "line": 145,
+  "character": 39
+ },
+ {
+  "formulaName": "nth_append_TCC1",
+  "line": 152,
+  "character": 18
+ },
+ {
+  "formulaName": "nth_rev_TCC1",
+  "line": 152,
+  "character": 29
+ },
+ {
+  "formulaName": "occurrences_TCC1",
+  "line": 158,
+  "character": 8
+ },
+ {
+  "formulaName": "permutations_is_ext_reflexive_TCC1",
+  "line": 202,
+  "character": 10
+ },
+ {
+  "formulaName": "suffix_TCC1",
+  "line": 275,
+  "character": 18
+ },
+ {
+  "formulaName": "suffix_TCC2",
+  "line": 275,
+  "character": 22
+ },
+ {
+  "formulaName": "suffix_TCC3",
+  "line": 275,
+  "character": 7
+ },
+ {
+  "formulaName": "contents_suffix_TCC1",
+  "line": 281,
+  "character": 16
+ },
+ {
+  "formulaName": "contents_suffix_TCC2",
+  "line": 296,
+  "character": 23
+ },
+ {
+  "formulaName": "contents_suffix_TCC3",
+  "line": 296,
+  "character": 34
+ },
+ {
+  "formulaName": "contents_prefix_TCC1",
+  "line": 300,
+  "character": 23
+ },
+ {
+  "formulaName": "contents_prefix_TCC2",
+  "line": 300,
+  "character": 34
+ },
+ {
+  "formulaName": "is_sorted?_TCC1",
+  "line": 320,
+  "character": 57
+ }
+]

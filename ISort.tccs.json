@@ -1,0 +1,37 @@
+[
+ {
+  "formulaName": "insert_TCC1",
+  "line": 11,
+  "character": 23
+ },
+ {
+  "formulaName": "cinsert_TCC1",
+  "line": 18,
+  "character": 16
+ },
+ {
+  "formulaName": "cinsert_TCC2",
+  "line": 19,
+  "character": 18
+ },
+ {
+  "formulaName": "insertion_sort_TCC1",
+  "line": 20,
+  "character": 11
+ },
+ {
+  "formulaName": "cinsertion_sort_TCC1",
+  "line": 46,
+  "character": 20
+ },
+ {
+  "formulaName": "cinsertion_sort_TCC2",
+  "line": 46,
+  "character": 24
+ },
+ {
+  "formulaName": "insertion_sort_is_quadratic_TCC1",
+  "line": 46,
+  "character": 44
+ }
+]
