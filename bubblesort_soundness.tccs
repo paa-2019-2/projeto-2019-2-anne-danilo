@@ -1,0 +1,8 @@
+% Termination TCC generated (at line 19, column 28) for  sorted?(tl)
+  % unfinished
+sorted?_TCC1: OBLIGATION
+  FORALL (l: list[nat], h: nat, tl: list[nat]):
+    l = cons(h, tl) IMPLIES
+     (FORALL (hh: nat, ttl: list[nat]):
+        (h <= hh) AND tl = cons(hh, ttl) IMPLIES
+         length[nat](tl) < length[nat](l));

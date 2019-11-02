@@ -26,6 +26,7 @@ MEASURE n
 % given input list will be sorted. 
 bubblesort_aux(l, ( n : below[l`length ] )) : RECURSIVE list[nat] =
 IF n = 0 THEN l
+
 ELSE bubblesort_aux(bubbling(l, n), n-1)
 ENDIF
 MEASURE n
@@ -36,6 +37,29 @@ MEASURE n
 bubblesort(l) : list[nat] = 
 IF null?(l) THEN l
 ELSE bubblesort_aux(l, l`length - 1 )
+ENDIF
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+c_bubbling(lc:[list[nat],nat], ( n : below[ l`length])) : RECURSIVE  list[nat] =
+IF n = 0 THEN cons(lc`1,lc`2)
+ELSIF car(l) > car(cdr(lc`1)) THEN LET lcaux = bubbling(cons(car(l),cdr(cdr(l))), n - 1) IN
+      (cons(car(cdr(lc`1)),lcaux`1),lc`2 + 1)
+ELSE LET lcaux = bubbling(cons(cdr(lc`1),lc`2 + 1), n - 1) IN 
+         cons(cons(car(lc`1),lcaux`1),lc`2 + 1)
+ENDIF
+MEASURE n
+
+c_bubblesort_aux(lc:[list[nat],nat], ( n : below[l`length ] )) : RECURSIVE list[nat] =
+IF n = 0 THEN cons(lc,0)
+ELSE c_bubblesort_aux(c_bubbling((lc), n), n-1)
+ENDIF
+MEASURE n
+
+count_bubblesort(l) : list[nat] = 
+IF null?(l) THEN (l,0)
+ELSE c_bubblesort_aux(l, l`length - 1 )
 ENDIF
 
 

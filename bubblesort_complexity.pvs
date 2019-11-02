@@ -1,0 +1,19 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Projeto e Analise de Algoritmos, Universidade de Brasilia
+%%% Danilo Santos, Anne Santos
+%%% 140135910, XXXXXXXXXXX
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+bubblesort_complexity : THEORY
+BEGIN
+
+IMPORTING   bubblesort, complexity
+
+l : VAR list[nat]
+
+
+bubble_sort_is_quadratic: LEMMA
+member(LAMBDA(n:nat): ,
+Omicron(LAMBDA(n:nat):length(l)^2))
+
+END bubblesort_complexity

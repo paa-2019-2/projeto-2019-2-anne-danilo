@@ -1,0 +1,21 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Projeto e Analise de Algoritmos, Universidade de Brasilia
+%%% Danilo Santos, Anne Santos
+%%% 140135910, XXXXXXXXXXX
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+bubblesort_soundness : THEORY
+BEGIN
+
+IMPORTING   bubblesort
+
+l : VAR list[nat]
+
+bubblesort_in_sorted_preserves_sort : LEMMA
+FORALL (l: list[nat], x:nat):
+    sorted?(l) IMPLIES sorted?(bubblesort(l))
+
+bubble_sort_sorts: LEMMA
+FORALL (l:list[nat]): sorted?(bubblesort(l))
+
+END bubblesort_soundness

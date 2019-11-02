@@ -1,0 +1,607 @@
+Starting pvs-allegro -qq ...
+Warning: Loading sys:libyices.so failed with error:
+         /opt/dev/pvs/bin/ix86_64-Linux/runtime/libyices.so: cannot open shared object file: No such file or directory.
+International Allegro CL Enterprise Edition
+9.0 [64-bit Linux (x86-64)] (Jan 14, 2013 3:07)
+Copyright (C) 1985-2012, Franz Inc., Oakland, CA, USA.  All Rights Reserved.
+
+This dynamic runtime copy of Allegro CL was built by:
+   [TC8101] SRI International
+
+;; Optimization settings: safety 1, space 1, speed 3, debug 1.
+;; For a complete description of all compiler switches given the
+;; current optimization settings evaluate (explain-compiler-settings).
+;;---
+;; Current reader case mode: :case-sensitive-lower
+; Fast loading /opt/dev/pvs/nasalib/pvs-patches/patch-0.l64fasl
+; Fast loading /opt/dev/pvs/nasalib/pvs-patches/patch-1.l64fasl
+; Fast loading /opt/dev/pvs/nasalib/pvs-patches/patch-2.l64fasl
+; Fast loading /opt/dev/pvs/nasalib/pvs-patches/patch-3.l64fasl
+; Fast loading /opt/dev/pvs/nasalib/pvs-patches/patch-4.l64fasl
+; Fast loading /opt/dev/pvs/nasalib/pvs-patches/patch-5.l64fasl
+; Fast loading /opt/dev/pvs/nasalib/pvs-patches/patch-6.l64fasl
+
+ground-eval exists as a defined rule.
+Redefining ground-eval. 
+ground-eval$ exists as a strategy.
+Redefining ground-eval$. 
+; Fast loading /opt/dev/pvs/nasalib/pvs-patches/patch-7.l64fasl
+; Fast loading /opt/dev/pvs/nasalib/pvs-patches/patch-8.l64fasl
+; Fast loading /opt/dev/pvs/nasalib/pvs-patches/patch-9.l64fasl
+; Fast loading /opt/dev/pvs/nasalib/pvs-patches/patch-10.l64fasl
+; Fast loading /opt/dev/pvs/nasalib/pvs-patches/patch-100.l64fasl
+; Fast loading /opt/dev/pvs/nasalib/pvs-patches/patch-101.l64fasl
+
+Defining skip-steps. 
+Defining skip-steps$. 
+Defining sklisp. 
+Defining extra-evalexprs. 
+Defining extra-evalexprs$. 
+printf exists as a strategy.
+Redefining printf. 
+commentf exists as a strategy.
+Redefining commentf. 
+unlabel* exists as a defined rule.
+Redefining unlabel*. 
+unlabel*$ exists as a strategy.
+Redefining unlabel*$. 
+delabel exists as a defined rule.
+Redefining delabel. 
+delabel$ exists as a strategy.
+Redefining delabel$. 
+Defining relabel__. 
+Defining relabel__$. 
+relabel exists as a defined rule.
+Redefining relabel. 
+relabel$ exists as a strategy.
+Redefining relabel$. 
+name-label exists as a defined rule.
+Redefining name-label. 
+name-label$ exists as a strategy.
+Redefining name-label$. 
+name-label* exists as a defined rule.
+Redefining name-label*. 
+name-label*$ exists as a strategy.
+Redefining name-label*$. 
+name-replace* exists as a strategy.
+Redefining name-replace*. 
+name-replace*$ exists as a strategy.
+Redefining name-replace*$. 
+discriminate exists as a defined rule.
+Redefining discriminate. 
+discriminate$ exists as a strategy.
+Redefining discriminate$. 
+mapstep exists as a strategy.
+Redefining mapstep. 
+mapstep@ exists as a strategy.
+Redefining mapstep@. 
+Defining with-fresh-labels-tccs__. 
+Defining with-fresh-labels-tccs__$. 
+Defining with-fresh-labels__. 
+Defining with-fresh-labels__$. 
+Defining with-fresh-labels. 
+Defining with-fresh-labels@. 
+Defining with-fresh-names__. 
+Defining with-fresh-names__$. 
+Defining with-fresh-names. 
+Defining with-fresh-names@. 
+copy__ exists as a defined rule.
+Redefining copy__. 
+copy__$ exists as a strategy.
+Redefining copy__$. 
+copy* exists as a defined rule.
+Redefining copy*. 
+copy*$ exists as a strategy.
+Redefining copy*$. 
+protect exists as a defined rule.
+Redefining protect. 
+protect$ exists as a strategy.
+Redefining protect$. 
+localtactic__ exists as a defined rule.
+Redefining localtactic__. 
+localtactic__$ exists as a strategy.
+Redefining localtactic__$. 
+deftactic exists as a defined rule.
+Redefining deftactic. 
+Added rule trust!.
+
+trust exists as a strategy.
+Redefining trust. 
+extra-tcc-step exists as a strategy.
+Redefining extra-tcc-step. 
+relabel-hide__ exists as a defined rule.
+Redefining relabel-hide__. 
+relabel-hide__$ exists as a strategy.
+Redefining relabel-hide__$. 
+Defining tccs-expression__. 
+Defining tccs-expression__$. 
+Defining tccs-expression. 
+tccs-formula__ exists as a defined rule.
+Redefining tccs-formula__. 
+tccs-formula__$ exists as a strategy.
+Redefining tccs-formula__$. 
+tccs-formula*__ exists as a defined rule.
+Redefining tccs-formula*__. 
+tccs-formula*__$ exists as a strategy.
+Redefining tccs-formula*__$. 
+tccs-formula* exists as a defined rule.
+Redefining tccs-formula*. 
+tccs-formula exists as a defined rule.
+Redefining tccs-formula. 
+tccs-formula$ exists as a strategy.
+Redefining tccs-formula$. 
+tccs-step__ exists as a defined rule.
+Redefining tccs-step__. 
+tccs-step__$ exists as a strategy.
+Redefining tccs-step__$. 
+tccs-step exists as a defined rule.
+Redefining tccs-step. 
+with-tccs exists as a defined rule.
+Redefining with-tccs. 
+with-tccs$ exists as a strategy.
+Redefining with-tccs$. 
+finalize__ exists as a defined rule.
+Redefining finalize__. 
+finalize__$ exists as a strategy.
+Redefining finalize__$. 
+finalize exists as a strategy.
+Redefining finalize. 
+touch exists as a defined rule.
+Redefining touch. 
+touch$ exists as a strategy.
+Redefining touch$. 
+when exists as a strategy.
+Redefining when. 
+when@ exists as a strategy.
+Redefining when@. 
+unless exists as a strategy.
+Redefining unless. 
+unless@ exists as a strategy.
+Redefining unless@. 
+when-label__ exists as a defined rule.
+Redefining when-label__. 
+when-label__$ exists as a strategy.
+Redefining when-label__$. 
+when-label exists as a strategy.
+Redefining when-label. 
+unless-label__ exists as a defined rule.
+Redefining unless-label__. 
+unless-label__$ exists as a strategy.
+Redefining unless-label__$. 
+unless-label exists as a strategy.
+Redefining unless-label. 
+if-label exists as a strategy.
+Redefining if-label. 
+for__ exists as a defined rule.
+Redefining for__. 
+for__$ exists as a strategy.
+Redefining for__$. 
+for exists as a defined rule.
+Redefining for. 
+for$ exists as a strategy.
+Redefining for$. 
+for@__ exists as a defined rule.
+Redefining for@__. 
+for@__$ exists as a strategy.
+Redefining for@__$. 
+for@ exists as a defined rule.
+Redefining for@. 
+for@$ exists as a strategy.
+Redefining for@$. 
+skeep exists as a defined rule.
+Redefining skeep. 
+skeep$ exists as a strategy.
+Redefining skeep$. 
+skeep* exists as a defined rule.
+Redefining skeep*. 
+skeep*$ exists as a strategy.
+Redefining skeep*$. 
+insteep exists as a defined rule.
+Redefining insteep. 
+insteep$ exists as a strategy.
+Redefining insteep$. 
+insteep* exists as a defined rule.
+Redefining insteep*. 
+insteep*$ exists as a strategy.
+Redefining insteep*$. 
+skoletin__ exists as a defined rule.
+Redefining skoletin__. 
+skoletin__$ exists as a strategy.
+Redefining skoletin__$. 
+skoletin exists as a defined rule.
+Redefining skoletin. 
+skoletin$ exists as a strategy.
+Redefining skoletin$. 
+skoletin* exists as a defined rule.
+Redefining skoletin*. 
+skoletin*$ exists as a strategy.
+Redefining skoletin*$. 
+redlet__ exists as a defined rule.
+Redefining redlet__. 
+redlet__$ exists as a strategy.
+Redefining redlet__$. 
+redlet exists as a defined rule.
+Redefining redlet. 
+redlet$ exists as a strategy.
+Redefining redlet$. 
+redlet* exists as a defined rule.
+Redefining redlet*. 
+redlet*$ exists as a strategy.
+Redefining redlet*$. 
+skodef__ exists as a defined rule.
+Redefining skodef__. 
+skodef__$ exists as a strategy.
+Redefining skodef__$. 
+skodef exists as a defined rule.
+Redefining skodef. 
+skodef$ exists as a strategy.
+Redefining skodef$. 
+skodef* exists as a defined rule.
+Redefining skodef*. 
+skodef*$ exists as a strategy.
+Redefining skodef*$. 
+cut exists as a defined rule.
+Redefining cut. 
+cut$ exists as a strategy.
+Redefining cut$. 
+splash__ exists as a defined rule.
+Redefining splash__. 
+splash__$ exists as a strategy.
+Redefining splash__$. 
+splash exists as a defined rule.
+Redefining splash. 
+splash$ exists as a strategy.
+Redefining splash$. 
+replaces exists as a defined rule.
+Redefining replaces. 
+replaces$ exists as a strategy.
+Redefining replaces$. 
+rewrites exists as a defined rule.
+Redefining rewrites. 
+rewrites$ exists as a strategy.
+Redefining rewrites$. 
+rewrite* exists as a defined rule.
+Redefining rewrite*. 
+rewrite*$ exists as a strategy.
+Redefining rewrite*$. 
+suffices exists as a defined rule.
+Redefining suffices. 
+suffices$ exists as a strategy.
+Redefining suffices$. 
+extrategies-about exists as a strategy.
+Redefining extrategies-about. 
+inductionfree__ exists as a defined rule.
+Redefining inductionfree__. 
+inductionfree__$ exists as a strategy.
+Redefining inductionfree__$. 
+inductionfree exists as a strategy.
+Redefining inductionfree. 
+; Fast loading /opt/dev/pvs/nasalib/pvs-patches/patch-102.l64fasl
+
+name-distrib exists as a strategy.
+Redefining name-distrib. 
+wrap-manip exists as a defined rule.
+Redefining wrap-manip. 
+wrap-manip$ exists as a strategy.
+Redefining wrap-manip$. 
+neg-formula exists as a defined rule.
+Redefining neg-formula. 
+neg-formula$ exists as a strategy.
+Redefining neg-formula$. 
+real-props exists as a defined rule.
+Redefining real-props. 
+real-props$ exists as a strategy.
+Redefining real-props$. 
+grind-reals exists as a defined rule.
+Redefining grind-reals. 
+grind-reals$ exists as a strategy.
+Redefining grind-reals$. 
+add-formulas exists as a defined rule.
+Redefining add-formulas. 
+add-formulas$ exists as a strategy.
+Redefining add-formulas$. 
+sub-formulas exists as a defined rule.
+Redefining sub-formulas. 
+sub-formulas$ exists as a strategy.
+Redefining sub-formulas$. 
+cases-monoms__ exists as a defined rule.
+Redefining cases-monoms__. 
+cases-monoms__$ exists as a strategy.
+Redefining cases-monoms__$. 
+simplify-monoms__ exists as a defined rule.
+Redefining simplify-monoms__. 
+simplify-monoms__$ exists as a strategy.
+Redefining simplify-monoms__$. 
+cancel-by exists as a defined rule.
+Redefining cancel-by. 
+cancel-by$ exists as a strategy.
+Redefining cancel-by$. 
+cancel-case__ exists as a defined rule.
+Redefining cancel-case__. 
+cancel-case__$ exists as a strategy.
+Redefining cancel-case__$. 
+guess_cancel_by__ exists as a defined rule.
+Redefining guess_cancel_by__. 
+guess_cancel_by__$ exists as a strategy.
+Redefining guess_cancel_by__$. 
+cancel-by__ exists as a defined rule.
+Redefining cancel-by__. 
+cancel-by__$ exists as a strategy.
+Redefining cancel-by__$. 
+cancel-formula exists as a defined rule.
+Redefining cancel-formula. 
+cancel-formula$ exists as a strategy.
+Redefining cancel-formula$. 
+field_case__ exists as a defined rule.
+Redefining field_case__. 
+field_case__$ exists as a strategy.
+Redefining field_case__$. 
+field__ exists as a defined rule.
+Redefining field__. 
+field__$ exists as a strategy.
+Redefining field__$. 
+field exists as a defined rule.
+Redefining field. 
+field$ exists as a strategy.
+Redefining field$. 
+sq-simp exists as a defined rule.
+Redefining sq-simp. 
+sq-simp$ exists as a strategy.
+Redefining sq-simp$. 
+both-sides-f exists as a defined rule.
+Redefining both-sides-f. 
+both-sides-f$ exists as a strategy.
+Redefining both-sides-f$. 
+wrap-formula exists as a strategy.
+Redefining wrap-formula. 
+field-about exists as a strategy.
+Redefining field-about. 
+; Fast loading /opt/dev/pvs/nasalib/pvs-patches/patch-103.l64fasl
+; Fast loading /opt/dev/pvs/nasalib/pvs-patches/patch-104.l64fasl
+; Fast loading /opt/dev/pvs/nasalib/pvs-patches/patch-105.l64fasl
+
+eval-expr exists as a defined rule.
+Redefining eval-expr. 
+eval-formula exists as a defined rule.
+Redefining eval-formula. 
+eval exists as a defined rule.
+Redefining eval. 
+pvsio-about exists as a strategy.
+Redefining pvsio-about. 
+; Fast loading /opt/dev/pvs/nasalib/pvs-patches/patch-106.l64fasl
+; Fast loading /opt/dev/pvs/nasalib/pvs-patches/patch-107.l64fasl
+; Fast loading /opt/dev/pvs/nasalib/pvs-patches/patch-108.l64fasl
+; Fast loading /opt/dev/pvs/nasalib/pvs-patches/patch-109.l64fasl
+; Fast loading /opt/dev/pvs/nasalib/pvs-patches/patch-110.l64fasl
+
+Loading semantic attachments in theory stdstr
+Loading semantic attachments in theory stdio
+Loading semantic attachments in theory stdmath
+Loading semantic attachments in theory stdindent
+Loading semantic attachments in theory stdprog
+Loading semantic attachments in theory stdcatch
+Loading semantic attachments in theory stdpvs
+Loading semantic attachments in theory stdpvsio
+Loading semantic attachments in theory stdsys
+; Fast loading /opt/dev/pvs/nasalib/pvs-patches/patch-200.l64fasl
+
+Defining metit. 
+pvs(1): 
+pvs(2): 
+Installing rewrite rule sets.singleton_rew (all instances)
+
+bubble_sort_sorts :  
+
+  |-------
+{1}   FORALL (l: list[nat]): sorted?(bubblesort(l))
+
+Rule? (induct "l")
+Inducting on l on formula 1,
+this yields  2 subgoals: 
+bubble_sort_sorts.1 :  
+
+  |-------
+{1}   sorted?(bubblesort(null))
+
+Rule? (expand "bubblesort")
+Expanding the definition of bubblesort,
+this simplifies to: 
+bubble_sort_sorts.1 :  
+
+  |-------
+{1}   sorted?(null)
+
+Rule? (assert)
+Simplifying, rewriting, and recording with decision procedures,
+this simplifies to: 
+bubble_sort_sorts.1 :  
+
+  |-------
+[1]   sorted?(null)
+
+Rule? (undo)
+This will undo the proof to: 
+bubble_sort_sorts.1 :  
+
+  |-------
+{1}   sorted?(null)
+Sure? (Y or N): Y
+bubble_sort_sorts.1 :  
+
+  |-------
+{1}   sorted?(null)
+
+Rule? (expand "sorted?")
+Expanding the definition of sorted?,
+this simplifies to: 
+bubble_sort_sorts.1 :  
+
+  |-------
+{1}   TRUE
+
+which is trivially true.
+
+This completes the proof of bubble_sort_sorts.1.
+
+bubble_sort_sorts.2 :  
+
+  |-------
+{1}   FORALL (cons1_var: nat, cons2_var: list[nat]):
+        sorted?(bubblesort(cons2_var)) IMPLIES
+         sorted?(bubblesort(cons(cons1_var, cons2_var)))
+
+Rule? (induct "n" "l")
+No formula corresponding to fnum l
+No change on: (induct "n" "l")
+bubble_sort_sorts.2 :  
+
+  |-------
+{1}   FORALL (cons1_var: nat, cons2_var: list[nat]):
+        sorted?(bubblesort(cons2_var)) IMPLIES
+         sorted?(bubblesort(cons(cons1_var, cons2_var)))
+
+Rule? (induct)
+Not enough arguments for prover command.
+bubble_sort_sorts.2 :  
+
+  |-------
+{1}   FORALL (cons1_var: nat, cons2_var: list[nat]):
+        sorted?(bubblesort(cons2_var)) IMPLIES
+         sorted?(bubblesort(cons(cons1_var, cons2_var)))
+
+Rule? (undo)
+This will undo the proof to: 
+bubble_sort_sorts :  
+
+  |-------
+{1}   FORALL (l: list[nat]): sorted?(bubblesort(l))
+Sure? (Y or N): Y
+bubble_sort_sorts :  
+
+  |-------
+{1}   FORALL (l: list[nat]): sorted?(bubblesort(l))
+
+Rule? (undo)
+No change.
+bubble_sort_sorts :  
+
+  |-------
+{1}   FORALL (l: list[nat]): sorted?(bubblesort(l))
+
+Rule? (undo-all)
+undo-all is not a valid prover command
+Rule? (undo)
+No change.
+bubble_sort_sorts :  
+
+  |-------
+{1}   FORALL (l: list[nat]): sorted?(bubblesort(l))
+
+Rule? (undo)
+No change.
+bubble_sort_sorts :  
+
+  |-------
+{1}   FORALL (l: list[nat]): sorted?(bubblesort(l))
+
+Rule? (undo)
+No change.
+bubble_sort_sorts :  
+
+  |-------
+{1}   FORALL (l: list[nat]): sorted?(bubblesort(l))
+
+Rule? (undo)
+No change.
+bubble_sort_sorts :  
+
+  |-------
+{1}   FORALL (l: list[nat]): sorted?(bubblesort(l))
+
+Rule? (measure-induct "l")
+Not enough arguments for prover command.
+bubble_sort_sorts :  
+
+  |-------
+{1}   FORALL (l: list[nat]): sorted?(bubblesort(l))
+
+Rule? (measure-induct "lenght(l)")
+Not enough arguments for prover command.
+bubble_sort_sorts :  
+
+  |-------
+{1}   FORALL (l: list[nat]): sorted?(bubblesort(l))
+
+Rule? (measure-induct "length(l)")
+Not enough arguments for prover command.
+bubble_sort_sorts :  
+
+  |-------
+{1}   FORALL (l: list[nat]): sorted?(bubblesort(l))
+
+Rule? (induct "l")
+Inducting on l on formula 1,
+this yields  2 subgoals: 
+bubble_sort_sorts.1 :  
+
+  |-------
+{1}   sorted?(bubblesort(null))
+
+Rule? (expand "bubblesort")
+Expanding the definition of bubblesort,
+this simplifies to: 
+bubble_sort_sorts.1 :  
+
+  |-------
+{1}   sorted?(null)
+
+Rule? (expand "sorted?")
+Expanding the definition of sorted?,
+this simplifies to: 
+bubble_sort_sorts.1 :  
+
+  |-------
+{1}   TRUE
+
+which is trivially true.
+
+This completes the proof of bubble_sort_sorts.1.
+
+bubble_sort_sorts.2 :  
+
+  |-------
+{1}   FORALL (cons1_var: nat, cons2_var: list[nat]):
+        sorted?(bubblesort(cons2_var)) IMPLIES
+         sorted?(bubblesort(cons(cons1_var, cons2_var)))
+
+Rule? (inst?)
+Couldn't find a suitable quantified formula.
+No change on: (inst?)
+bubble_sort_sorts.2 :  
+
+  |-------
+{1}   FORALL (cons1_var: nat, cons2_var: list[nat]):
+        sorted?(bubblesort(cons2_var)) IMPLIES
+         sorted?(bubblesort(cons(cons1_var, cons2_var)))
+
+Rule? (skolem)
+Rule skolem has argument list:
+(fnum constants &optional skolem-typepreds? dont-simplify?)
+No change on: (skip)
+bubble_sort_sorts.2 :  
+
+  |-------
+{1}   FORALL (cons1_var: nat, cons2_var: list[nat]):
+        sorted?(bubblesort(cons2_var)) IMPLIES
+         sorted?(bubblesort(cons(cons1_var, cons2_var)))
+
+Rule? (skeep)
+Skolemizing and keeping names of the universal formula in (+ -),
+this simplifies to: 
+bubble_sort_sorts.2 :  
+
+{-1}  sorted?(bubblesort(cons2_var))
+  |-------
+{1}   sorted?(bubblesort(cons(cons1_var, cons2_var)))
+
+Rule? 
