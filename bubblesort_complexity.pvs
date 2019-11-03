@@ -10,10 +10,18 @@ BEGIN
 IMPORTING   bubblesort, complexity
 
 l : VAR list[nat]
+n : VAR nat
+lc : VAR [list[nat],nat]
 
+insert_cinsert_equiv: LEMMA
+		      FORALL (x, n:nat) (l:list[nat]):
+		     	    bubblesort(l) = count_bubblesort(l)`1
+
+count_bubble_sort_ws_general: LEMMA
+		  FORALL (l:list[nat]): count_bubblesort(l)`2 <= (length(l) * (length(l) - 1))/2
 
 bubble_sort_is_quadratic: LEMMA
-member(LAMBDA(n:nat): ,
-Omicron(LAMBDA(n:nat):length(l)^2))
+    FORALL (l:list[nat]):
+        member(LAMBDA(n:nat): count_bubblesort(l)`2, Omicron(LAMBDA(n:nat):length(l)^2))
 
 END bubblesort_complexity
