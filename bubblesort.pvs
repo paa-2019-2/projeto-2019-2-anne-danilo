@@ -11,12 +11,14 @@ IMPORTING   sorting
 
 l,l1,l2 : VAR list[nat]
 i,j,k,n : VAR nat
+
 lc : VAR [list[nat],nat]
 
 % This is the bubbling function that moves the greates key in
 % the n-prefix of a list l to the n-th position of the list. 
 bubbling(l, ( n : below[ l`length])) : RECURSIVE  list[nat] =
 IF n = 0 THEN l
+
 ELSIF car(l) > car(cdr(l)) THEN cons(car(cdr(l)), bubbling(cons(car(l),cdr(cdr(l))), n - 1))
 ELSE cons(car(l), bubbling(cdr(l), n - 1))
 ENDIF
@@ -42,25 +44,26 @@ ENDIF
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
 count_bubbling(lc:[list[nat],nat], ( n : below[length(lc`1)])) : RECURSIVE  [list[nat],nat] =
-IF n = 0 THEN (lc`1,lc`2)
+IF n = 0 THEN (lc`1, lc`2)
 ELSIF car(lc`1) > car(cdr(lc`1)) THEN 
-     LET lcaux = count_bubbling(cons(car(lc`1),cdr(cdr(lc`1))), n - 1) IN
-         (cons(car(cdr(lc`1)),lcaux`1),lc`2 + 1)
-ELSE LET lcaux = count_bubbling(cons(cdr(lc`1),lc`2 + 1), n - 1) IN 
-         (cons(car(lc`1),lcaux`1),lc`2 + 1)
+     LET lcaux = count_bubbling((cons(car(lc`1),cdr(cdr(lc`1))), lc`2), n - 1) IN
+         (cons(car(cdr(lc`1)), lcaux`1), lc`2 + 1)
+ELSE LET lcaux = count_bubbling((cdr(lc`1), lc`2), n - 1) IN 
+         (cons(car(lc`1), lcaux`1), lc`2 + 1)
 ENDIF
 MEASURE n
 
-count_bubblesort_aux(lc:[list[nat],nat], ( n : below[l`length ] )) : RECURSIVE [list[nat],nat] =
-IF n = 0 THEN (lc`1,0)
-ELSE count_bubblesort_aux(count_bubbling((lc), n), n-1)
+count_bubblesort_aux(lc:[list[nat],nat], ( n : below[length(lc`1)] )) : RECURSIVE [list[nat],nat] =
+IF n = 0 THEN (lc`1,lc`2)
+ELSE count_bubblesort_aux(count_bubbling(lc, n), n-1)
 ENDIF
 MEASURE n
 
-count_bubblesort(l) : [list[nat],nat] = 
+count_bubblesort(l:list[nat]) : [list[nat],nat] = 
 IF null?(l) THEN (l,0)
-ELSE count_bubblesort_aux(l, l`length - 1 )
+ELSE count_bubblesort_aux((l,0), l`length - 1 )
 ENDIF
 
 
