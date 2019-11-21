@@ -9,7 +9,8 @@ mergesort : THEORY
 
 BEGIN
 
-IMPORTING sorting
+IMPORTING sorting, power@log
+
 l,l1,l2 : VAR list[nat]
 
 % Merging (sorted lists)

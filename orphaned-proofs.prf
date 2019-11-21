@@ -1,0 +1,1 @@
+("bubblesort_complexity" bubblesort_complexity insert_cinsert_equiv 0 (insert_cinsert_equiv-1 nil 3781792064 ("" (induct "l") (("1" (expand "bubblesort") (("1" (expand "count_bubblesort") (("1" (propax) nil nil)) nil)) nil) ("2" (skeep) (("2" (postpone) nil nil)) nil)) nil) nil shostak))

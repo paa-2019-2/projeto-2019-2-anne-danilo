@@ -7,15 +7,15 @@
 bubblesort_complexity : THEORY
 BEGIN
 
-IMPORTING   bubblesort, complexity
+IMPORTING   bubblesort, complexity, sorting
 
 l : VAR list[nat]
 n : VAR nat
 lc : VAR [list[nat],nat]
 
-insert_cinsert_equiv: LEMMA
-		      FORALL (x, n:nat) (l:list[nat]):
-		     	    bubblesort(l) = count_bubblesort(l)`1
+bubblesort_count_bubblesort_equiv: LEMMA
+FORALL (l:list[nat]):
+       bubblesort(l) = count_bubblesort(l)`1
 
 count_bubble_sort_ws_general: LEMMA
 		  FORALL (l:list[nat]): count_bubblesort(l)`2 <= (length(l) * (length(l) - 1))/2

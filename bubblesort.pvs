@@ -7,7 +7,7 @@
 bubblesort : THEORY
 BEGIN
 
-IMPORTING   sorting 
+IMPORTING   sorting
 
 l,l1,l2 : VAR list[nat]
 i,j,k,n : VAR nat
@@ -49,9 +49,9 @@ count_bubbling(lc:[list[nat],nat], ( n : below[length(lc`1)])) : RECURSIVE  [lis
 IF n = 0 THEN (lc`1, lc`2)
 ELSIF car(lc`1) > car(cdr(lc`1)) THEN 
      LET lcaux = count_bubbling((cons(car(lc`1),cdr(cdr(lc`1))), lc`2), n - 1) IN
-         (cons(car(cdr(lc`1)), lcaux`1), lc`2 + 1)
+         (cons(car(cdr(lc`1)), lcaux`1), lcaux`2 + 1)
 ELSE LET lcaux = count_bubbling((cdr(lc`1), lc`2), n - 1) IN 
-         (cons(car(lc`1), lcaux`1), lc`2 + 1)
+         (cons(car(lc`1), lcaux`1), lcaux`2 + 1)
 ENDIF
 MEASURE n
 
