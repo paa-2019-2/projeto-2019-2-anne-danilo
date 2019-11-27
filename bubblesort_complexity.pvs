@@ -10,24 +10,30 @@ BEGIN
 IMPORTING   bubblesort, complexity, sorting
 
 l : VAR list[nat]
-n : VAR nat
-lc : VAR [list[nat],nat]
-
-
+n,c : VAR nat
+        
 bubbling_count_bubbling_equiv: LEMMA
-FORALL (l:list[nat]):
-       bubbling(l) = count_bubbling(l)`1
+    FORALL (l:list[nat]) (n:below[l`length]) (c:nat):
+        bubbling(l,n) = count_bubbling((l,c),n)`1
+
+bubbling_count_bubbling_equiv_2: LEMMA
+    FORALL (lc:[list[nat],nat]) (n:below[l`length]):
+        bubbling(lc`1,n) = count_bubbling(lc,n)`1
 
 bubblesort_aux_count_bubblesort_aux_equiv: LEMMA
-FORALL (l:list[nat]):
-       bubblesort_aux(l) = count_bubblesort_aux(l)`1
+    FORALL (l:list[nat],n : below[ l`length]) (c:nat):
+        bubblesort_aux(l,n) = count_bubblesort_aux((l,c),n)`1
+
+bubblesort_aux_count_bubblesort_aux_equiv_2: LEMMA
+    FORALL (lc:[list[nat],nat]) (n:below[l`length]):
+        bubblesort_aux(lc`1,n) = count_bubblesort_aux(lc,n)`1
 
 bubblesort_count_bubblesort_equiv: LEMMA
-FORALL (l:list[nat]):
-       bubblesort(l) = count_bubblesort(l)`1
+    FORALL (l:list[nat]):
+        bubblesort(l) = count_bubblesort(l)`1
 
 count_bubble_sort_ws_general: LEMMA
-		  FORALL (l:list[nat]): count_bubblesort(l)`2 <= (length(l) * (length(l) - 1))/2
+	FORALL (l:list[nat]): count_bubblesort(l)`2 <= (length(l) * (length(l) - 1))/2
 
 bubble_sort_is_quadratic: LEMMA
     FORALL (l:list[nat]):

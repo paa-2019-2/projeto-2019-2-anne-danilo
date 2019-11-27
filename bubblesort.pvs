@@ -46,7 +46,7 @@ ENDIF
 
 
 count_bubbling(lc:[list[nat],nat], ( n : below[length(lc`1)])) : RECURSIVE  [list[nat],nat] =
-IF n = 0 THEN (lc`1, lc`2)
+IF n = 0 THEN lc
 ELSIF car(lc`1) > car(cdr(lc`1)) THEN 
      LET lcaux = count_bubbling((cons(car(lc`1),cdr(cdr(lc`1))), lc`2), n - 1) IN
          (cons(car(cdr(lc`1)), lcaux`1), lcaux`2 + 1)
