@@ -13,6 +13,15 @@ l : VAR list[nat]
 n : VAR nat
 lc : VAR [list[nat],nat]
 
+
+bubbling_count_bubbling_equiv: LEMMA
+FORALL (l:list[nat]):
+       bubbling(l) = count_bubbling(l)`1
+
+bubblesort_aux_count_bubblesort_aux_equiv: LEMMA
+FORALL (l:list[nat]):
+       bubblesort_aux(l) = count_bubblesort_aux(l)`1
+
 bubblesort_count_bubblesort_equiv: LEMMA
 FORALL (l:list[nat]):
        bubblesort(l) = count_bubblesort(l)`1
