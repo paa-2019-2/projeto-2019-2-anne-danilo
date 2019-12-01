@@ -7,7 +7,7 @@
     (NOT const-decl "[bool -> bool]" booleans nil)
     (number nonempty-type-decl nil numbers nil)
     (PRED type-eq-decl nil defined_types nil)
-    (list type-decl nil list_adt nil) nil
+    (list type-decl nil list_adt nil)
     (AND const-decl "[bool, bool -> bool]" booleans nil)
     (number_field_pred const-decl "[number -> boolean]" number_fields
      nil)
@@ -34,6 +34,12 @@
      ("3" (postpone) nil nil))
     nil)
    nil shostak))
+ (bubbling_count_bubbling_equiv_2_TCC1 0
+  (bubbling_count_bubbling_equiv_2_TCC1-1 nil 3783854144
+   ("" (subtype-tcc) nil nil) nil nil))
+ (bubbling_count_bubbling_equiv_2_TCC2 0
+  (bubbling_count_bubbling_equiv_2_TCC2-1 nil 3783854144
+   ("" (subtype-tcc) nil nil) nil nil))
  (bubblesort_count_bubblesort_equiv 0
   (bubblesort_count_bubblesort_equiv-2 "" 3783359156
    ("" (measure-induct "length(l)" ("l"))
@@ -50,28 +56,31 @@
                         (("" (expand "list2finseq" 1)
                           ((""
                             (lemma
-                             "bubblesort_aux_count_bubblesort_aux_equiv")
+                             "bubblesort_aux_count_bubblesort_aux_equiv_2")
                             (("" (inst?)
-                              (("1"
+                              ((""
                                 (inst?)
                                 (("1"
                                   (replaces -1)
                                   (("1"
                                     (lemma
-                                     "bubbling_count_bubbling_equiv")
+                                     "bubbling_count_bubbling_equiv_2")
                                     (("1"
                                       (inst?)
                                       (("1"
-                                        (replaces -1)
-                                        (("1" (postpone) nil nil))
-                                        nil)
-                                       ("2" (postpone) nil nil))
+                                        (inst?)
+                                        (("1" (replaces -1) nil nil)
+                                         ("2" (postpone) nil nil))
+                                        nil))
                                       nil))
                                     nil))
-                                  nil))
-                                nil)
-                               ("2" (postpone) nil nil)
-                               ("3" (postpone) nil nil))
+                                  nil)
+                                 ("2"
+                                  (expand "list2finseq")
+                                  (("2" (postpone) nil nil))
+                                  nil)
+                                 ("3" (postpone) nil nil))
+                                nil))
                               nil))
                             nil))
                           nil))

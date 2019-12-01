@@ -7,7 +7,7 @@
 bubblesort_soundness : THEORY
 BEGIN
 
-IMPORTING   bubblesort
+IMPORTING   bubblesort, sorting
 
 l : VAR list[nat]
 
@@ -21,7 +21,16 @@ ENDCASES
 ENDCASES
 MEASURE length(l)
 
-bubble_sort_sorts: LEMMA
-FORALL (l:list[nat]): sorted?(bubblesort(l))
+bubblesort_sorts: CONJECTURE
+FORALL (l:list[nat]): 
+    sorted?(bubblesort(l))
+
+bubblesort_is_permutations: CONJECTURE
+FORALL (l:list[nat]):
+    permutations(l, bubblesort(l))
+
+bubblesort_works: CONJECTURE
+FORALL (l:list[nat]):
+    sorted?(bubblesort(l)) AND permutations(l, fs_insertion_sort(l)) 
 
 END bubblesort_soundness
