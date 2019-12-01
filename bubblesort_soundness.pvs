@@ -31,6 +31,6 @@ FORALL (l:list[nat]):
 
 bubblesort_works: CONJECTURE
 FORALL (l:list[nat]):
-    sorted?(bubblesort(l)) AND permutations(l, fs_insertion_sort(l)) 
+    sorted?(bubblesort(l)) AND permutations(l, bubblesort(l)) 
 
 END bubblesort_soundness
